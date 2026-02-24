@@ -1,0 +1,40 @@
+app:
+  db_url: "sqlite:///./secop.db"
+  timezone: "America/Bogota"
+  notifier: "stdout" 
+  score_threshold: 0.65
+  max_items_per_run: 500
+
+source:
+  collector: "fixture"
+  fixture_path: "./data/fixtures/secop_items.json"
+
+filters:
+  published_within_days: 1000  # Valor altísimo para que los fixtures de 2026 pasen en 2024
+  min_budget: 0
+  entity_allowlist: []
+  entity_blocklist: []
+  location_allowlist: []
+  modality_allowlist: []
+
+queries:
+  - name: "IA-LLM-RAG"
+    keywords_any: ["inteligencia artificial", "IA", "LLM", "chatbot", "RAG", "modelo de lenguaje"]
+    keywords_all: []
+    keywords_not: ["mantenimiento", "aseo", "vigilancia"]
+    phrases: ["modelo de lenguaje", "retrieval augmented generation"]
+    synonyms:
+      "ia": ["inteligencia artificial"]
+      "llm": ["modelo de lenguaje"]
+  - name: "Analítica de Datos"
+    keywords_any: ["analitica", "data warehouse", "bi", "etl", "lakehouse"]
+    keywords_all: []
+    keywords_not: []
+    phrases: []
+    synonyms: {}
+
+notifications:
+  max_alerts_per_run: 20
+  slack:
+    webhook_env_var: "SLACK_WEBHOOK_URL"
+    username: "secop-monitor"

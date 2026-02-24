@@ -1,0 +1,68 @@
+[
+    {
+        "process_id": "SECOP-001",
+        "title": "Adquisición de software de inteligencia artificial para validación de datos",
+        "description": "Se requiere modelo de lenguaje (LLM) para automatizar chatbot de servicio al ciudadano.",
+        "entity_name": "Ministerio TIC",
+        "published_at": "2026-02-23T08:00:00",
+        "closing_at": "2026-03-24T18:00:00",
+        "budget": 150000000,
+        "location": "Bogotá",
+        "url": "https://secop.gov.co/001"
+    },
+    {
+        "process_id": "SECOP-002",
+        "title": "Mantenimiento y aseo de instalaciones",
+        "description": "Servicio integral de mantenimiento preventivo y vigilancia sede norte.",
+        "entity_name": "Agencia de Tierras",
+        "published_at": "2026-02-20T10:00:00",
+        "closing_at": "2026-03-01T15:00:00",
+        "budget": 80000000,
+        "location": "Medellín",
+        "url": "https://secop.gov.co/002"
+    },
+    {
+        "process_id": "SECOP-003",
+        "title": "Servicios de analítica de datos y BI",
+        "description": "Construcción de data warehouse para análisis de indicadores, ETLs definidos.",
+        "entity_name": "DANE",
+        "published_at": "2026-02-21T09:30:00",
+        "closing_at": "2026-03-15T12:00:00",
+        "budget": 350000000,
+        "location": "Bogotá",
+        "url": "https://secop.gov.co/003"
+    },
+    {
+        "process_id": "SECOP-004",
+        "title": "Implementación de sistema RAG",
+        "description": "Desarrollo deRetrieval Augmented Generation sobre base de conocimientos de regulación.",
+        "entity_name": "Superintendencia",
+        "published_at": "2026-02-22T14:15:00",
+        "closing_at": "2026-03-30T17:00:00",
+        "budget": 200000000,
+        "location": "Bogotá",
+        "url": "https://secop.gov.co/004"
+    },
+    {
+        "process_id": "SECOP-DUP-001",
+        "title": "Adquisición de software de inteligencia artificial para validación de datos (republicado)",
+        "description": "Se requiere modelo de lenguaje (LLM) para automatizar chatbot de servicio al ciudadano. Corrección de pliego.",
+        "entity_name": "Ministerio TIC",
+        "published_at": "2026-02-24T08:00:00",
+        "closing_at": "2026-04-24T18:00:00",
+        "budget": 150000000,
+        "location": "Bogotá",
+        "url": "https://secop.gov.co/dup001"
+    },
+    {
+        "process_id": "SECOP-NOISE-99",
+        "title": "Adquisición de papelería",
+        "description": "Toners, resmas y lápices para el año fiscal",
+        "entity_name": "SENA",
+        "published_at": "2025-10-01T08:00:00",
+        "closing_at": "2025-11-01T08:00:00",
+        "budget": 1000000,
+        "location": "Cali",
+        "url": "https://secop.gov.co/noise99"
+    }
+]
