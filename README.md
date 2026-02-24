@@ -4,6 +4,20 @@ SARA es un motor determinista y escalable de **extracción, matcheo y alerta tem
 
 Está diseñado bajo una filosofía de ligereza, con un motor de scoring explícito (*explainable*), persistencia agnóstica a SQLite y preparado para escalar a Postgres.
 
+### Por qué este proyecto es importante
+
+La monitorización de la contratación pública requiere:
+
+- Filtrado determinista
+- Puntuación explicable
+- Ingesta idempotente
+- Garantías transaccionales seguras
+- Deduplicación secundaria para republicaciones
+
+SARA resuelve estos desafíos de ingeniería sin depender de LLM.
+
+![Tests](https://github.com/manueldazar/sara-secop-monitor/actions/workflows/tests.yml/badge.svg)
+
 ## 🏗 Arquitectura del Sistema (ETL)
 El ciclo de vida de un documento SECOP dentro de SARA fluye linealmente garantizando idempotencia en cada paso.
 
