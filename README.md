@@ -23,11 +23,11 @@ El ciclo de vida de un documento SECOP dentro de SARA fluye linealmente garantiz
 
 ```mermaid
 flowchart TD
-    A[Collector (SECOP API / Fixture)] -->|RawItems| B[Normalize]
-    B -->|Title / Desc Normalizados\n+ SHA-256 Fingerprint| C[Matcher Engine]
-    C -->|Score + Explainability JSON| D[Dedupe Secundario]
-    D -->|Status: new / dismissed / saved| E[(Repository / SQLite)]
-    E -->|Pendientes>Threshold| F[Notifier (Slack / Stdout)]
+    A["Collector<br/>SECOP API / Fixture"] -->|RawItems| B["Normalize"]
+    B -->|"Title / Desc Normalizados<br/>+ SHA-256 Fingerprint"| C["Matcher Engine"]
+    C -->|"Score + Explainability JSON"| D["Dedupe Secundario"]
+    D -->|"Status: new / dismissed / saved"| E["Repository (SQLite)"]
+    E -->|"Pendientes > Threshold"| F["Notifier<br/>Slack / Stdout"]
 ```
 
 ### Decisiones Técnicas Clave
